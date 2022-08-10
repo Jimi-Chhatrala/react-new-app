@@ -1,13 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import HelloMessage from "./HelloMessage";
+import House from "./House";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+let a = "Jimmy";
+let b = 30;
+const friends = ["Amit", "Jazz", "Kumar", "Roy"];
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <House /> */}
+    {/* <App /> */}
+    {/* <HelloMessage name={a} age={b} > */}
+    {/* <p>Children Element 1</p> */}
+    {/* </HelloMessage> */}
+    <HelloMessage name={a} age={b} isMarried={false} arr={friends} />
+    {/* <HelloMessage name="Kumar" age="25" /> */}
   </React.StrictMode>
 );
 
