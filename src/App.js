@@ -10,8 +10,20 @@ function App() {
       <Header />
       <Sidebar />
       <Footer />
+      <App2 />
     </>
   );
 }
 
+// export function App2() {
+function App2() {
+  return (
+    <>
+      <h1>App2</h1>
+    </>
+  );
+}
+
+export { App2 };
 export default App;
+// export { App, App2 };
